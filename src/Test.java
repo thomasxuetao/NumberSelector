@@ -145,27 +145,27 @@ public class Test extends JFrame {
 			}
 			ik = (ik - n1 - n2 - n3 - n4)/2;
 
-			strmsg.append(ik);
+			strmsg.append(Integer.toHexString(ik));
 			strmsg.append("\t");
-			strmsg.append(iMvalue/5);
+			strmsg.append(Integer.toHexString(iMvalue/5));
 			strmsg.append("\t");
-			strmsg.append(n1);
+			strmsg.append(Integer.toHexString(n1));
 			strmsg.append("\t");
-			strmsg.append(iMvalue/5);
+			strmsg.append(Integer.toHexString(iMvalue/5));
 			strmsg.append("\t");
-			strmsg.append(n2);
+			strmsg.append(Integer.toHexString(n2));
 			strmsg.append("\t");
-			strmsg.append(iMvalue/5);
+			strmsg.append(Integer.toHexString(iMvalue/5));
 			strmsg.append("\t");
-			strmsg.append(n3);
+			strmsg.append(Integer.toHexString(n3));
 			strmsg.append("\t");
-			strmsg.append(iMvalue/5);
+			strmsg.append(Integer.toHexString(iMvalue/5));
 			strmsg.append("\t");
-			strmsg.append(n4);
+			strmsg.append(Integer.toHexString(n4));
 			strmsg.append("\t");
-			strmsg.append(jm + i*jn);
+			strmsg.append(Integer.toHexString(jm + i*jn));
 			strmsg.append("\n");
-			jRstArea.append(strmsg.toString());
+			jRstArea.append(strmsg.toString().toUpperCase());
 			
 			i++;
 			if(i == 144){
