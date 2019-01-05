@@ -70,9 +70,9 @@ public class Test extends JFrame {
 		jPassLabel = new JLabel("M÷µ:");
 		jMvField = new JTextField("25");
 		jMvField.setColumns(5);
-		jMField = new JTextField("2");
+		jMField = new JTextField("200");
 		jMField.setColumns(5);
-		jNField = new JTextField("2");
+		jNField = new JTextField("20");
 		jNField.setColumns(5);
 		jComputeButton = new JButton("º∆À„");
 		jRstArea = new JTextArea();
@@ -127,6 +127,7 @@ public class Test extends JFrame {
 
 	public void computeKvalue(){
 		int i= 0;
+//		dataList.remove(0);
 		for(Databuf tmpDatabuf : dataList){
 			StringBuffer strmsg = new StringBuffer();
 			strmsg.append(tmpDatabuf.strhexString);
@@ -168,7 +169,7 @@ public class Test extends JFrame {
 			jRstArea.append(strmsg.toString().toUpperCase());
 			
 			i++;
-			if(i == 144){
+			if(i == 145){
 				return;
 			}
 		}
